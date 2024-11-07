@@ -32,9 +32,6 @@ CornDiseaseClassifier/
 - Bibliotecas listadas em requirements.txt
 
 Para instalar as dependências, use:
- - pip install -r requirements.txt
-
-Para instalar as dependências, use:
 ```console 
 pip install -r requirements.txt
 ```
