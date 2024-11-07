@@ -23,12 +23,8 @@ Esse projeto utiliza uma CNN para a classificação automática de doenças nas 
 CornDiseaseClassifier/
 │
 ├── README.md                    # Explicação do projeto e instruções de uso
-├── Modelo_treinado.h5           # Arquivo do modelo treinado
 ├── requirements.txt             # Dependências do projeto
 ├── train_model.ipynb            # Notebook com o código de treinamento e avaliação
-├── test/                        # Diretório de teste (com subpastas para cada classe de doença)
-├── train/                       # Diretório de treino (com subpastas para cada classe de doença)
-└── validation/                  # Diretório de validação (com subpastas para cada classe de doença)
 ```
 # Pré-requisitos
 
@@ -43,18 +39,39 @@ Para instalar as dependências, use:
 pip install -r requirements.txt
 ```
 
-# Como Executar
+# Como Executar no vscode
+
+Lembre-se de instalar o python no VScode 
 
 Clone este repositório:
 ```console 
 git clone https://github.com/seu-usuario/CornDiseaseClassifier.git
 ```
+
 Instale as dependências:
 ```console 
 pip install -r requirements.txt
 ```
 
-Abra o Jupyter Notebook:
+Baixe o Modelo Treinado e os datasets com as imagens:
+```console
+https://www.kaggle.com/datasets/giovanireis/classificador-de-doenas-do-milho/data
+```
+
+O diretorio deve ficar assim :
+
+```bash 
+CornDiseaseClassifier/
+│
+├── README.md                    # Explicação do projeto e instruções de uso
+├── requirements.txt             # Dependências do projeto
+├── train_model.ipynb            # Notebook com o código de treinamento e avaliação
+├── test/                        # Diretório de teste (com subpastas para cada classe de doença)
+├── train/                       # Diretório de treino (com subpastas para cada classe de doença)
+└── validation/                  # Diretório de validação (com subpastas para cada classe de doença)
+```
+
+Abra o VScode:
 ```console 
 train_model.ipynb
 ```
@@ -93,6 +110,13 @@ O projeto utiliza imagens de folhas de milho divididas em quatro classes:
 - Corn___Northern_Leaf_Blight (Queima das Folhas do Norte)
 
 Os dados estão organizados em diretórios para treino (train), validação (validation), e teste (test), com subpastas para cada classe de doença.
+
+O dataset foram obtidos através de um artigo que pode ser lido através dos links abaixo :
+
+```console
+https://www.sciencedirect.com/science/article/abs/pii/S0045790619300023?via%3Dihub
+https://data.mendeley.com/datasets/tywbtsjrjv/1
+```
 
 # Resultados
 Durante o treinamento, o modelo alcançou uma acurácia satisfatória nas imagens de validação e teste. Os gráficos de acurácia e perda podem ser visualizados no notebook train_model.ipynb.
