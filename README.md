@@ -1,4 +1,6 @@
-# CornDiseaseClassifier- Classificador de Doenças do Milho 
+# Classificador de Doenças do Milho - Corn Disease Classifier
+
+<img src= "https://github.com/giolreis/CornDiseaseClassifier-/blob/main/1731017597797.jpg" width-center ="600px">
 
 Classificador de doenças em folhas de milho usando Redes Neurais Convolucionais (CNNs) para auxiliar no monitoramento da saúde das plantas. Este projeto identifica quatro classes específicas: Mancha de Cercospora (Gray Leaf Spot), Ferrugem Comum, Saudável, e Queima das Folhas do Norte.
 
